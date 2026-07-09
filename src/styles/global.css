@@ -1,0 +1,55 @@
+:root {
+  --bg: #050816;
+  --bg-secondary: #0b1020;
+
+  --gold: #d6a84f;
+
+  --white: #f5f1e8;
+  --gray: #b0b0b0;
+}
+
+body {
+  margin: 0;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212, 167, 44, 0.473),
+      transparent 35%
+    ),
+    radial-gradient(
+    circle at center,
+    rgba(214, 169, 79, 0.126),
+    transparent 45%
+    ),
+    linear-gradient(
+      to bottom,
+      #14215b,
+      #0b1227
+    );
+
+  color: var(--white);
+
+  min-height: 100vh;
+
+  font-family: Inter, sans-serif;
+
+  overflow-x: hidden;
+  background:
+radial-gradient(
+circle at center,
+rgba(37,99,235,0.15),
+transparent 45%
+),
+radial-gradient(
+circle at top,
+rgba(240,193,75,0.08),
+transparent 35%
+),
+#050816;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

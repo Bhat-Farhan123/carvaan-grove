@@ -1,0 +1,111 @@
+.cta {
+  padding: 180px 80px;
+}
+
+.cta-box {
+  max-width: 1100px;
+
+  margin: auto;
+
+  text-align: center;
+
+  padding: 100px 80px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(214, 168, 79, 0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  border: 1px solid rgba(214,168,79,0.15);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(214,168,79,0.08);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  top: -200px;
+  left: -150px;
+}
+
+.cta span {
+  color: var(--gold);
+
+  letter-spacing: 5px;
+
+  font-size: 0.9rem;
+}
+
+.cta h2 {
+  color: var(--white);
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 5rem;
+
+  line-height: 1.05;
+
+  margin: 25px 0;
+}
+
+.cta p {
+  color: var(--gray);
+
+  font-size: 1.2rem;
+
+  max-width: 700px;
+
+  margin: auto;
+
+  line-height: 1.9;
+}
+
+.cta-btn {
+  display: inline-block;
+
+  margin-top: 50px;
+
+  padding: 20px 45px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  background: var(--gold);
+
+  color: #000;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 40px rgba(214,168,79,0.35);
+}
+
+.cta-location {
+  margin-top: 35px;
+
+  color: var(--gray);
+
+  font-size: 1rem;
+}
