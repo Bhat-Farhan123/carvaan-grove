@@ -68,3 +68,42 @@
 
   color: var(--white);
 }
+
+
+
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 25px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+
+    line-height: 1.15;
+  }
+
+  .about p {
+    font-size: 1rem;
+
+    line-height: 1.8;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .stat-card {
+    width: 100%;
+
+    padding: 25px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.8rem;
+  }
+}

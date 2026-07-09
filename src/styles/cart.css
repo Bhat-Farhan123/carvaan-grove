@@ -4,7 +4,7 @@
   right: 0;
 
   width: 380px;
-  height: 100vh;
+  height: 100dvh;
 
   background: #0b1020;
 
@@ -200,4 +200,36 @@
   opacity: 1;
 
   visibility: visible;
+}
+
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    width: 100%;
+  }
+
+  .cart-header {
+    padding: 20px;
+  }
+
+  .cart-items {
+    padding: 10px 20px;
+  }
+
+  .cart-footer {
+    padding: 20px;
+  }
+
+  .cart-item h4 {
+    font-size: 1rem;
+  }
+
+  .quantity-controls {
+    gap: 10px;
+  }
+
+  .quantity-controls button {
+    width: 36px;
+    height: 36px;
+  }
 }

@@ -29,3 +29,16 @@
 .floating-whatsapp:hover {
   transform: translateY(-6px) scale(1.05);
 }
+
+
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    width: 55px;
+    height: 55px;
+
+    right: 15px;
+    bottom: 15px;
+
+    font-size: 1.4rem;
+  }
+}

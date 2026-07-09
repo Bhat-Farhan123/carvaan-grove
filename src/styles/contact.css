@@ -109,3 +109,55 @@
 
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 20px;
+  }
+
+  .cta-box {
+    padding: 50px 25px;
+
+    border-radius: 25px;
+  }
+
+  .cta h2 {
+    font-size: 2.4rem;
+
+    line-height: 1.15;
+
+    margin: 20px 0;
+  }
+
+  .cta p {
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+  .cta-btn {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 35px;
+  }
+
+  .cta-location {
+    font-size: 0.9rem;
+  }
+
+  .cta-box::before {
+    width: 250px;
+    height: 250px;
+
+    top: -100px;
+    left: -80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta h2 {
+    font-size: 2rem;
+  }
+}

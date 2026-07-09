@@ -108,13 +108,65 @@
 @media (max-width: 768px) {
   .product-modal {
     grid-template-columns: 1fr;
+
+    width: 95%;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border-radius: 20px;
   }
 
   .modal-image {
-    height: 280px;
+    height: 220px;
+  }
+
+  .modal-content {
+    padding: 25px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .modal-price {
+    font-size: 1.2rem;
+
+    margin-bottom: 18px;
+  }
+
+  .modal-description {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+  }
+
+  .product-benefits {
+    margin: 20px 0;
+  }
+
+  .product-benefits p {
+    font-size: 0.95rem;
+  }
+
+  .quantity-selector {
+    gap: 12px;
+
+    margin-bottom: 20px;
+  }
+
+  .quantity-selector button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .modal-cart-btn {
+    padding: 14px;
   }
 }
-
 .product-benefits {
   margin: 25px 0;
 }
@@ -177,4 +229,13 @@
 
 .modal-cart-btn {
   width: 100%;
+}
+
+
+.product-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.product-modal {
+  scrollbar-width: none;
 }

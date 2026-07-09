@@ -79,10 +79,45 @@
 
 @media (max-width: 992px) {
   .reviews-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .testimonials .section-header h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 20px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonials .section-header {
+    margin-bottom: 50px;
+  }
+
+  .testimonials .section-header h2 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+  }
+
+  .review-card {
+    padding: 25px;
+  }
+
+  .review-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials .section-header h2 {
+    font-size: 2rem;
   }
 }

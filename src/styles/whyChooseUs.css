@@ -89,17 +89,50 @@
 
   line-height: 1.8;
 }
-
 @media (max-width: 768px) {
   .why {
-    padding: 100px 20px;
+    padding: 80px 20px;
+  }
+
+  .why-header {
+    margin-bottom: 50px;
+  }
+
+  .why-header h2 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+
+  .why-header p {
+    font-size: 0.95rem;
   }
 
   .why-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
+  .why-card {
+    padding: 25px;
+  }
+
+  .why-icon {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+
+  .why-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .why-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
   .why-header h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
