@@ -36,6 +36,23 @@ export default function ProductModal({ product, isOpen, onClose, addToCart }) {
             product carries the richness of Kashmir's soil, tradition, and
             craftsmanship.
           </p>
+          <div className="product-details">
+            <p>
+              <strong>Quantity:</strong> {product.quantity}
+            </p>
+
+            <p>
+              <strong>Origin:</strong> {product.origin}
+            </p>
+
+            <p>
+              <strong>Shelf Life:</strong> {product.shelfLife}
+            </p>
+
+            <p>
+              <strong>Storage:</strong> {product.storage}
+            </p>
+          </div>
 
           <div className="product-benefits">
             <p>✓ Naturally Grown</p>

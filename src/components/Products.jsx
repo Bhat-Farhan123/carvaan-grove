@@ -24,36 +24,89 @@ export default function Products({ addToCart }) {
       price: 299,
       image: appleImg,
       category: "Fresh",
+
+      quantity: "1 KG Box",
+      description:
+        "Premium Red Delicious apples freshly harvested from our orchard in Anantnag.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "15 Days",
+      storage: "Store in a cool and dry place",
     },
+
     {
       name: "Apple Juice",
       price: 199,
       image: juiceImg,
       category: "Beverages",
+
+      quantity: "750ml Bottle",
+      description:
+        "Freshly pressed apple juice with natural sweetness and no artificial preservatives.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "6 Months",
+      storage: "Refrigerate after opening",
     },
+
     {
       name: "Apple Pickle",
       price: 249,
       image: pickleImg,
       category: "Preserves",
+
+      quantity: "500g Glass Jar",
+      description:
+        "Traditional Kashmiri apple pickle prepared using family recipes and authentic spices.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "12 Months",
+      storage: "Store in a cool dry place",
     },
+
     {
       name: "Apple Jam",
       price: 179,
       image: jamImg,
       category: "Preserves",
+
+      quantity: "400g Jar",
+      description:
+        "Homemade apple jam crafted from fresh orchard apples with a rich fruity taste.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "10 Months",
+      storage: "Refrigerate after opening",
     },
+
     {
       name: "Dried Apple Slices",
       price: 149,
       image: driedImg,
       category: "Specialty",
+
+      quantity: "250g Pack",
+      description:
+        "Naturally dried apple slices with no added sugar, perfect for healthy snacking.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "8 Months",
+      storage: "Keep sealed in a dry place",
     },
+
     {
       name: "Apple Vinegar",
       price: 299,
       image: vinegarImg,
       category: "Beverages",
+
+      quantity: "500ml Bottle",
+      description:
+        "Naturally fermented apple vinegar made from fresh orchard apples.",
+
+      origin: "Anantnag, Kashmir",
+      shelfLife: "24 Months",
+      storage: "Store away from direct sunlight",
     },
   ];
 
@@ -123,6 +176,10 @@ export default function Products({ addToCart }) {
 
               <div className="product-content">
                 <h3>{product.name}</h3>
+
+                <p className="product-quantity">{product.quantity}</p>
+
+                <p className="product-short-desc">{product.description}</p>
 
                 <div className="product-footer">
                   <span>₹{product.price}</span>

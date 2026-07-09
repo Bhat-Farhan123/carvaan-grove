@@ -239,3 +239,12 @@
 .product-modal {
   scrollbar-width: none;
 }
+
+.product-details {
+  margin: 25px 0;
+}
+
+.product-details p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 10px;
+}
