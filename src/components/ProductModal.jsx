@@ -54,12 +54,6 @@ export default function ProductModal({ product, isOpen, onClose, addToCart }) {
             </p>
           </div>
 
-          <div className="product-benefits">
-            <p>✓ Naturally Grown</p>
-            <p>✓ Handpicked Quality</p>
-            <p>✓ Direct From Orchard</p>
-          </div>
-
           <div className="quantity-selector">
             <button onClick={() => quantity > 1 && setQuantity(quantity - 1)}>
               −

@@ -11,10 +11,12 @@ import Footer from "../components/Footer";
 import Cart from "../components/Cart";
 import FloatingWhatsapp from "../components/FloatingWhatsapp";
 import Testimonials from "../components/Testimonials";
+import CheckoutModal from "../components/CheckoutModal";
 
 export default function Home() {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   const addToCart = (product) => {
     setCartItems((prev) => {
@@ -103,6 +105,17 @@ export default function Home() {
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
         removeFromCart={removeFromCart}
+        setIsCheckoutOpen={setIsCheckoutOpen}
+      />
+      <CheckoutModal
+        isOpen={isCheckoutOpen}
+        onClose={() => setIsCheckoutOpen(false)}
+        cartItems={cartItems}
+        totalItems={cartItems.reduce((total, item) => total + item.quantity, 0)}
+        totalPrice={cartItems.reduce(
+          (total, item) => total + item.price * item.quantity,
+          0,
+        )}
       />
     </>
   );

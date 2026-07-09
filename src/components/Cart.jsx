@@ -7,6 +7,7 @@ export default function Cart({
   increaseQuantity,
   decreaseQuantity,
   removeFromCart,
+  setIsCheckoutOpen,
 }) {
   const totalItems = cartItems.reduce(
     (total, item) => total + item.quantity,
@@ -16,30 +17,6 @@ export default function Cart({
     (total, item) => total + item.price * item.quantity,
     0,
   );
-  const whatsappOrder = () => {
-    const message = `
-    Hello Carvaan Grove,
-
-    I would like to order:
-
-    ${cartItems
-      .map(
-        (item) =>
-          `• ${item.name} x ${item.quantity} = ₹${item.price * item.quantity}`,
-      )
-      .join("\n")}
-
-    Total Items: ${totalItems}
-
-    Total Amount: ₹${totalPrice}
-    `;
-
-    const phone = "916006995279";
-
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-    window.open(url, "_blank");
-  };
 
   return (
     <>
@@ -92,7 +69,10 @@ export default function Cart({
           </div>
 
           {cartItems.length > 0 && (
-            <button className="whatsapp-btn" onClick={whatsappOrder}>
+            <button
+              className="whatsapp-btn"
+              onClick={() => setIsCheckoutOpen(true)}
+            >
               Order On WhatsApp
             </button>
           )}
