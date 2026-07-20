@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Environment secrets
+.env
+backend/.env
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Generated ChromaDB database
+backend/chroma_db/

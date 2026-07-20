@@ -12,6 +12,7 @@ import Cart from "../components/Cart";
 import FloatingWhatsapp from "../components/FloatingWhatsapp";
 import Testimonials from "../components/Testimonials";
 import CheckoutModal from "../components/CheckoutModal";
+import ChatBot from "../components/ChatBot";
 
 export default function Home() {
   const [cartItems, setCartItems] = useState([]);
@@ -97,6 +98,7 @@ export default function Home() {
 
       <Footer />
       <FloatingWhatsapp />
+      <ChatBot />
 
       <Cart
         cartItems={cartItems}
